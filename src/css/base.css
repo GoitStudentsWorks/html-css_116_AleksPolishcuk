@@ -1,6 +1,7 @@
-
-
 body {
+  font-family: 'Inter Tight', sans-serif;
+  color: #fbfbfb;
+  background-color: #576f35;
+
   scroll-behavior: smooth;
 }
-
