@@ -32,10 +32,20 @@
   line-height: 1.43;
 }
 
+.reviews-slider {
+  overflow: auto;
+  stroke-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .reviews-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 38px;
+  width: calc(100% * 3 + 38px * 2);
 }
 
 .reviews-item {
@@ -44,8 +54,9 @@
   border-radius: 24px;
   width: 100%;
   min-height: 228px;
-
   text-align: center;
+
+  width: 335px;
 }
 
 .reviews-item-image {
