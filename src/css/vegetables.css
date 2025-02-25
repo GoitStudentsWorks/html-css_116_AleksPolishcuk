@@ -5,10 +5,8 @@ ul {
   box-sizing: border-box;
   background-color: #7a3145;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: column;
-  max-width: 375px;
+  max-width: 100%;
 }
 .title-vegetables {
   font: 600 48px / 1.08333 'Inter Tight', sans-serif;
@@ -83,7 +81,7 @@ span.span-veg {
 
 @media screen and (min-width: 768px) {
   .conteiner-vegetables {
-    max-width: 768px;
+    width: 768px;
   }
   .vegetables {
     background-color: #7a3145;
@@ -91,7 +89,7 @@ span.span-veg {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    max-width: 768px;
+    max-width: 100%;
   }
   .title-vegetables {
     font: 600 64px / 1 'Inter Tight', sans-serif;
@@ -111,7 +109,7 @@ span.span-veg {
     font: 500 16px / 1.25 'Inter Tight', sans-serif;
     color: #fbfbfb;
     width: 700px;
-    margin-left: 20px;
+    margin-left: 32px;
     margin-top: 24px;
   }
   .div-cont-vegetables {
