@@ -2,9 +2,11 @@ ul {
   list-style-type: none;
 }
 .vegetables {
+  padding: 20px 0;
   box-sizing: border-box;
   background-color: #7a3145;
   display: flex;
+  align-items: center;
   flex-direction: column;
   max-width: 100%;
 }
@@ -86,8 +88,7 @@ span.span-veg {
   .vegetables {
     background-color: #7a3145;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
     max-width: 100%;
   }
@@ -161,6 +162,7 @@ span.span-veg {
   }
   .vegetables {
     max-width: 100%;
+    align-items: center;
   }
   .title-vegetables {
     font: 600 64px / 1 'Inter Tight', sans-serif;
