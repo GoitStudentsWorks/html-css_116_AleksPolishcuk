@@ -1,10 +1,12 @@
 /* ---- MOBILE ---- */
 
 .reviews {
-  /* margin-top: 80px; */
   padding: 80px 0;
   background-color: #fbfbfb;
   color: #141414;
+  overflow: hidden;
+
+  /* background-color: black; */
 }
 
 .reviews-top-wrapper {
@@ -33,19 +35,45 @@
 }
 
 .reviews-slider {
+  margin: 0 -40px;
+  padding: 0 40px;
   overflow: auto;
   stroke-width: none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
   }
+  scroll-snap-type: x mandatory;
+}
+
+.reviews-slider-gradient {
+  position: relative;
+  margin: 0 -40px;
+  padding: 0 40px;
+}
+
+.reviews-slider-gradient::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(
+    90deg,
+    #fbfbfb,
+    transparent 20px,
+    transparent calc(100% - 20px),
+    #fbfbfb
+  );
 }
 
 .reviews-list {
   display: flex;
   flex-wrap: nowrap;
-  gap: 38px;
-  width: calc(100% * 3 + 38px * 2);
+  gap: 15px;
+  width: calc(100% * 3 + 15px * 2);
 }
 
 .reviews-item {
@@ -57,6 +85,7 @@
   text-align: center;
 
   width: 335px;
+  scroll-snap-align: center;
 }
 
 .reviews-item-image {
@@ -85,6 +114,12 @@
   text-align: center;
 }
 
+@media screen and (max-width: 324px) {
+  .reviews-title {
+    font-size: 47px;
+  }
+}
+
 /* ---- TABLET ---- */
 
 @media screen and (min-width: 768px) {
@@ -104,6 +139,27 @@
     margin-bottom: 24px;
   }
 
+  .reviews-slider {
+    margin: 0 -50px;
+    padding: 0 50px;
+  }
+
+  .reviews-slider-gradient {
+    margin: 0 -50px;
+    padding: 0 50px;
+  }
+
+  .reviews-slider-gradient::after {
+    background: linear-gradient(
+      90deg,
+      #fbfbfb,
+      transparent 25px,
+      transparent calc(100% - 25px),
+      #fbfbfb
+    );
+    /* background: none; */
+  }
+
   .reviews-text {
     font-size: 16px;
     line-height: 1.25;
@@ -111,11 +167,16 @@
 
   .reviews-item {
     padding: 20px 26px;
-    width: calc((100% - 24px) / 2);
+    width: calc((100% - 24px * 2) / 3);
     min-height: 248px;
+
+    &:nth-child(2) {
+      scroll-snap-align: none;
+    }
   }
 
   .reviews-list {
+    width: calc((100% - 24px) / 2 * 3 + 24px * 2);
     gap: 24px;
   }
 
@@ -128,6 +189,10 @@
 /* ---- DESKTOP ---- */
 
 @media screen and (min-width: 1280px) {
+  .reviews-list {
+    width: 100%;
+  }
+
   .reviews-item {
     padding: 20px 28px;
     width: calc((100% - 24px * 2) / 3);
