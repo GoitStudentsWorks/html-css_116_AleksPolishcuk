@@ -2,7 +2,6 @@ ul {
   list-style-type: none;
 }
 .vegetables {
-  padding: 20px 0;
   box-sizing: border-box;
   background-color: #7a3145;
   display: flex;
@@ -110,7 +109,7 @@ span.span-veg {
     font: 500 16px / 1.25 'Inter Tight', sans-serif;
     color: #fbfbfb;
     width: 700px;
-    margin-left: 32px;
+    padding-left: 32px;
     margin-top: 24px;
   }
   .div-cont-vegetables {
@@ -133,7 +132,7 @@ span.span-veg {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    max-width: 704px;
+    max-width: 340px;
   }
 
   .head-vegetables {
@@ -179,18 +178,16 @@ span.span-veg {
     font: 500 16px / 1.25 'Inter Tight', sans-serif;
     color: #fbfbfb;
     width: 720px;
-    padding-left: 80px;
+    padding-left: 100px;
   }
   .div-cont-vegetables {
-    box-sizing: border-box;
     display: flex;
-    width: 1080px;
-    margin-left: 80px;
   }
   .ul-vegetables {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    padding-left: 100px;
   }
   .list-vegetables {
     width: calc((100% - 48px) / 3);
@@ -199,15 +196,14 @@ span.span-veg {
     margin-bottom: 0;
   }
   .div-veg-list {
-    width: 100%;
-    max-width: 344px;
-    height: 380px;
     border-radius: 40px;
     background: #fbfbfb;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    width: 100%;
+    max-width: 344px;
   }
 
   .head-vegetables {
