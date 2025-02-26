@@ -32,8 +32,8 @@
     margin-bottom: 20px;
     padding: 40px 20px;
     border-radius: 30px;
-    width: 335px;
-    height: 552px;
+    max-width: 100%;
+    min-height: 552px;
     background: #FBFBFB;
 
 }
@@ -176,8 +176,8 @@
     margin-bottom: 80px;
     padding: 40px 20px;
     border-radius: 30px;
-    width: 335px;
-    height: 465px;
+    max-width: 100%;
+    min-height: 465px;
     background: #7a3145;
 }
 
@@ -286,7 +286,6 @@
     margin-bottom: 100px;
     padding: 52px;
     width: 640px;
-    height: 528px;
 }
 .order-img {
     max-width: 536px;
