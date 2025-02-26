@@ -164,4 +164,8 @@
     padding-top: 52px;
     padding-bottom: 52px;
   }
+
+  .footer-address {
+    max-width: 215px;
+  }
 }
