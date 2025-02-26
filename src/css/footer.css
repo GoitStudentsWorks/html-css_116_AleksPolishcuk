@@ -142,9 +142,12 @@
   .footer-address {
     font-size: 16px;
     line-height: 1.25;
-    font-weight: 500;
   }
 
+  .policy-item,
+  .copy-rights {
+    font-weight: 500;
+  }
   .exclamation-contacts-box {
     margin-bottom: 0;
   }
