@@ -1,4 +1,5 @@
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/src/css/hero.css">
 <section class="hero-section">
     <div class="hero">
         <div class="hero-container">
@@ -10,7 +11,14 @@
             </p>
         </div>
         <div class="hero-img">
-                <img src="src/img/2-hero-bg/hero-bg-mob.webp"  srcset="../img/2-hero-bg/hero-bg-desk.webp , ../img/2-hero-bg/hero-bg-tab.webp" alt="Vegetables"  >
+            <picture>
+                <source srcset="../img/2-hero-bg/hero-bg-desk.webp 1x, ../img/2-hero-bg/hero-bg-desk.webp "
+                    media="(min-width: 1280px)">
+                <source srcset="../img/2-hero-bg/hero-bg-tab.webp 1x, ../img/2-hero-bg/hero-bg-tab-2x.webp 2x"
+                    media="(min-width: 768px)">
+                <img srcset="../img/2-hero-bg/hero-bg-mob.webp 1x, ../img/2-hero-bg/hero-bg-mob-2x.webp 2x"
+                    src="../img/2-hero-bg/hero-bg-mob.webp" alt="vegetable">
+            </picture>
         </div>
     </div>
 </section>

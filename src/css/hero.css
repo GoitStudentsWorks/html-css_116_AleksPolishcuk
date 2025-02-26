@@ -6,6 +6,8 @@
   top: 0;
   left: 0;
   padding-top: 100px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .hero {
@@ -13,6 +15,9 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -22,7 +27,6 @@
   width: 100%;
   max-width: 335px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .title-hero {
@@ -33,6 +37,7 @@
   text-transform: uppercase;
   color: #fbfbfb;
   margin-top: 0;
+  text-align: left;
 }
 
 .text-hero {
@@ -41,15 +46,17 @@
   line-height: 20px;
   color: #fbfbfb;
   margin-top: 20px;
+  text-align: left;
 }
 
 .hero-img {
   display: flex;
   width: 100%;
-  height: 372px;
+  height: auto;
 }
 .hero-img img {
   width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -57,10 +64,12 @@
 @media (min-width: 768px) {
   .hero-section {
     gap: 52px;
+    align-items: center;
   }
 
   .hero {
     gap: 40px;
+    max-width: 768px;
   }
 
   .hero-container {
@@ -72,43 +81,48 @@
   .title-hero {
     font-size: 76px;
     line-height: 76px;
+    text-align: left;
   }
 
   .text-hero {
     margin-top: 0;
+    text-align: left;
   }
   .hero-img {
     max-width: 100%;
-    height: 100%;
+  }
+  .hero-img img {
+    object-fit: contain;
   }
 }
 
 @media (min-width: 1280px) {
   .hero-section {
-    height: 796px;
-    display: flex;
-    align-items: center;
     padding: 0;
     overflow: hidden;
+    height: 796px;
   }
 
   .hero {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0 100px;
+    padding-top: 200px;
     gap: 20px;
     max-width: 1440px;
-    margin: 0 auto;
+    margin-left: 70px;
+    margin-bottom: 52px;
     width: 100%;
   }
 
   .hero-container {
-    max-width: 50%;
-    padding: 0 0 52px 0;
-    width: 50%;
-    margin-top: 200px;
-    margin-left: 70px;
+    max-width: calc(50% - 70px);
+    width: auto;
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .title-hero {
@@ -123,12 +137,17 @@
   }
 
   .hero-img {
-    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 640px;
+    height: auto;
     position: absolute;
-    left: 895px;
+    right: 0;
     top: 0;
   }
   .hero-img img {
     object-fit: cover;
+    max-height: 796px;
+    width: 100%;
   }
 }
