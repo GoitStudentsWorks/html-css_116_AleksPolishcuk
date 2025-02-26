@@ -1,6 +1,7 @@
 .advertisement {
   background-color: #fbfbfb;
   padding: 80px 0;
+  min-width: 320px;
 }
 .visually-hidden {
   position: absolute;
@@ -17,7 +18,6 @@
 .advertisement-interest {
   display: inline-block;
   border-radius: 12px;
-  width: 335px;
   height: 102px;
   color: #fbfbfb;
   background-color: #576f35;
@@ -43,19 +43,17 @@
   .advertisement-text {
     font-size: 64px;
     line-height: 1;
+    padding-bottom: 12px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  br {
-    display: none;
-  }
   .advertisement {
     padding: 100px 0;
   }
   .advertisement-text {
     font-size: 76px;
-    width: 1054px;
     height: 228px;
+    padding-left: 16px;
   }
   .advertisement-interest {
     min-width: 814px;
