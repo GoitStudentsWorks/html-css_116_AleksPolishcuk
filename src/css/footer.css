@@ -3,7 +3,7 @@
 }
 
 .footer-container {
-  padding-top: 42px;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
@@ -21,17 +21,17 @@
 .logo-description {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
 }
 
 .footer-description {
   font-family: 'Inter Tight', sans-serif;
   color: #fbfbfb;
-  width: 335px;
+  width: 100%;
   margin-bottom: 40px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.43;
 }
 
 .exclamation-contacts-box {
@@ -55,6 +55,7 @@
   color: #fbfbfb;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
+  letter-spacing: -0em;
 }
 
 .footer-contacts {
@@ -71,7 +72,7 @@
   color: #fbfbfb;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.43;
 }
 
 .policy {
@@ -83,10 +84,10 @@
 
 .policy-item,
 .copy-rights {
-  color: rgb(212, 191, 196);
+  color: #d4bfc4;
   font-family: Inter Tight;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 1.43;
 }
 
 @media screen and (min-width: 768px) {
@@ -117,6 +118,7 @@
 
   .logo-description {
     gap: 24px;
+    line-height: 1.25;
   }
 
   .policy {
@@ -142,6 +144,10 @@
     line-height: 1.25;
   }
 
+  .policy-item,
+  .copy-rights {
+    font-weight: 500;
+  }
   .exclamation-contacts-box {
     margin-bottom: 0;
   }
@@ -160,5 +166,9 @@
   .footer-container {
     padding-top: 52px;
     padding-bottom: 52px;
+  }
+
+  .footer-address {
+    max-width: 215px;
   }
 }
