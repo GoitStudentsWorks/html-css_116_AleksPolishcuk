@@ -40,10 +40,12 @@
   overflow: auto;
   stroke-width: none;
   -ms-overflow-style: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+
   scroll-snap-type: x mandatory;
+}
+
+.reviews-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .reviews-slider-gradient {
