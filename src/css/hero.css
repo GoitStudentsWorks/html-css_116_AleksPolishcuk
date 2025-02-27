@@ -1,0 +1,125 @@
+/* ---- MOBILE ---- */
+
+.hero {
+  background-color: #576f35;
+}
+
+.hero-wrapper {
+  padding-top: 100px;
+  padding-bottom: 412px;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #576f35;
+  background-image: url(../img/2-hero-bg/hero-bg-mob.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2x) {
+  .hero-wrapper {
+    background-image: url(../img/2-hero-bg/hero-bg-mob-2x.webp);
+  }
+}
+
+.hero-content-wrapper {
+  width: 100%;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 52px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 374px) {
+  .hero-wrapper {
+    padding-bottom: calc(40px + (372 / 375 * 100vw));
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .hero-title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .hero-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .hero-title {
+    font-size: 46.5px;
+  }
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+/* ---- TABLET ---- */
+
+@media screen and (min-width: 768px) {
+  .hero-wrapper {
+    max-width: 768px;
+    padding-top: 120px;
+    padding-bottom: 588px;
+    background-image: url(../img/2-hero-bg/hero-bg-tab.webp);
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2x) {
+    .hero-wrapper {
+      background-image: url(../img/2-hero-bg/hero-bg-tab-2x.webp);
+    }
+  }
+
+  .hero-title {
+    font-size: 76px;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  .hero-text {
+    width: 603px;
+    font-size: 16px;
+    line-height: 1.25;
+    line-height: calc(20 / 16);
+  }
+}
+
+/* ---- DESKTOP ---- */
+
+@media screen and (min-width: 1280px) {
+  .hero-wrapper {
+    max-width: 1280px;
+    padding-top: 232px;
+    padding-bottom: 52px;
+    background-image: url(../img/2-hero-bg/hero-bg-desk.webp);
+    background-position: right;
+  }
+
+  @media screen and (min-resolution: 2x), (-webkit-device-pixel-ratio: 2x) {
+    .hero-wrapper {
+      background-image: url(../img/2-hero-bg/hero-bg-desk-2x.webp);
+    }
+  }
+
+  .hero-title {
+    margin-bottom: 128px;
+  }
+
+  .hero-content-wrapper {
+    width: 504px;
+  }
+
+  .hero-text {
+    width: 472px;
+  }
+}
